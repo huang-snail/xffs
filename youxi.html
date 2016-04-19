@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="挂号,预约挂号,网上预约,网上挂号,预约医生,专家预约,预约医院,在线医生,咨询问诊,网上医院,移动医疗,预约挂号统一平台" name="Keywords" />
+		<meta content="华康•移动医疗是经省、市卫生厅（局）官方授权的免费预约挂号统一平台,面对全国用户提供三甲医院网上预约挂号和最专业的在线医疗健康咨询服务,旗下移动医疗手机软件,帮助用户患者通过手机进行网上进行预约挂号,无需排队,轻松就诊." name="Description" />
+		<title>医生，快来做心肺复苏</title>
+		<link rel="stylesheet" href="http://apps.bdimg.com/libs/animate.css/3.1.0/animate.min.css">
+		<!-- Link Swiper's CSS -->
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- s -->
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script>
+			function wxInput(obj) {
+				ST = obj.signature;
+			}
+		</script>
+		<!-- wxapiauth.hk515.com -->
+		<script src="http://wxapiauth.hk515.com/api/wechat/Signature?appId=wxb4a25f9e39926b54&noncestr=1428560985000&timestamp=1428560985000&callback=wxInput"></script>
+		<script>
+			var sTitle = '医生，快来做心肺复苏';
+			var sDesc = '我30秒内用心肺复苏拯救了TA，你也来试试吧！';
+			var sLink = 'http://huodong.hk515.com/xffs/index.html';
+			var imgUrl = 'http://huodong.hk515.com/xffs/images/share.png';
+		</script>
+		<script src="js/wx.js" type="text/javascript" charset="utf-8"></script>
+		<!-- s -->
+		<script>
+			  var _hmt = _hmt || [];
+			  (function() {
+			    var hm = document.createElement("script");
+			    hm.src = "//hm.baidu.com/hm.js?93dce326341a9dbc085a70e8a6514e87";
+			    var s = document.getElementsByTagName("script")[0]; 
+			    s.parentNode.insertBefore(hm, s);
+			  })();
+		</script>
+	</head>
+
+	<body>
+		<div class="loading">
+			<div class="loader">Loading...</div>
+		</div>
+		<a href="javascript:;" class="btnBgm"></a>
+		<!-- Swiper -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide page2 swiper-no-swiping">
+					<div class="clearfix"></div>
+					<img src="images/chedeng.gif" alt="" class="youxilogo animated fadeInLeft" />
+					<div class="youxi_img animated fadeInUpBig">
+						<img src="images/avatar2.png" alt="" class="youxi_img1"/>
+						<img src="images/shuomin.png" alt="" class="youxi_img2"/>
+						<a href="javascript:;" class="youxibtn animated pulse infinite">开始救人</a>
+					</div>
+					<i class="weiqi1"></i>
+					<i class="weiqi2"></i>
+					<i class="weiqi3"></i>
+				</div>
+				<div class="swiper-slide page3 swiper-no-swiping">
+					<div class="clearfix"></div>
+					<div class="countDown">
+						<h4>倒计时</h4>
+						<p><span class="second" id="second">30</span>秒</p>
+					</div>
+					<div class="countNumber">
+						<h4>CPR心肺复苏</h4>
+						<p><span class="num2">00</span>次</p>
+					</div>
+					<div class="life">
+						<div class="xt"></div>
+					</div>
+					<div class="man">
+						<img src="images/hx.png" alt="" class="huxi" />
+						<a href="javascript:;" class="hand"></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="bg"></div>
+		<div id="starTime" class="kaishi">
+		</div>
+		<div class="result">
+			<div class="count">
+				<div class="cprnum">
+					<h3>CPR</h3>
+					<span></span><em>次</em>
+				</div>
+				<div class="counttime">
+					<h3>时间</h3>
+					<span></span><em>秒</em>
+				</div>
+			</div>
+			<p class="p1">感谢您及时出手，成功拯救患者！您的成绩超越了97%的医生哦！</p>
+			<p class="p2">您的按压频率没有控制好，患者已经去见耶稣了。您的成绩只超越了50%的医生！</p>
+			<p class="p3">按压过快或过慢都会急救失败！游戏时间内完成60次按压最佳，您的成绩只超过了10%的医生！</p>
+			<p class="p4">这样的按压频率不对哦！游戏时间内完成60次按压最佳，您的成绩只超过了1%的医生！</p>
+			<p><a href="javascript:void(0);" class="btn_retry">再玩一次</a><a href="jianjie.html" class="btn_result">贾大成指南</a>
+			</p>
+		</div>
+		<audio src="images/music.mp3" loop />
+		<!-- Swiper JS -->
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/motion.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<!-- Initialize Swiper -->
+		<script>
+			var countstar,
+				t = null,
+				xt = 110,
+				hand=document.querySelector('.hand'),
+				youxibtn=$('.youxibtn'),
+				bg=$('.bg'),
+				sourceArr = [
+				"http://huodong.hk515.com/xffs/images/che.png",
+				"http://huodong.hk515.com/xffs/images/bg2.png",
+				"http://huodong.hk515.com/xffs/images/man1.png",
+				"http://huodong.hk515.com/xffs/images/btn_go.png",
+				"http://huodong.hk515.com/xffs/images/shuomin.png",
+				"http://huodong.hk515.com/xffs/images/bg3.png",
+				"http://huodong.hk515.com/xffs/images/chedeng.gif",
+				"http://huodong.hk515.com/xffs/images/zhinan_img.png",
+				]; //需要加载的资源列表
+			new mo.Loader(sourceArr, {
+				onComplete: function() {
+					$('.loading').remove();
+				}
+			});
+			$(function() {
+				var swiper = new Swiper('.swiper-container', {
+					noSwiping: true
+				});
+				youxibtn.on('click', function() {
+					//此处判断是否是app，如果是app判断是否登陆，如果已经登陆跳到游戏页面，如果没有，弹出登陆
+					//如果不是app
+					if (1 == 1) {
+						swiper.slideTo(1,timer(3,starTime));
+//						$('#starTime').show();
+						bg.show();
+						setTimeout('threes()',3500);
+					} else {
+						$('.bg,.login').show();
+					}
+				});
+				//点击按钮提交注册或者登陆  手机号码验证
+				$('input[type="submit"]').on('click', function(e) {
+					var reg = /^(1[3|5|8])[\d]{9}$/;
+					if (reg.test($('#loginPhoneNumber').val())) {
+						window.location.href = "http://www.baidu.com";
+					} else {
+						alert('请输入正确的手机号码');
+					}
+					e.stopPropagation();
+				});
+				//跳到注册
+				$('.reglink').on('click', function() {
+					$('.register').show();
+					$('.login').hide();
+				});
+				//再来一次  每人仅有1次再来一次机会
+				$('.btn_retry').on('click', function() {
+					t = window.clearInterval(t);
+					$('.bg,.result,.bg_img').hide();
+					$('.num2').html(0);
+					$('.xt').height(0);
+					timer(30,second);
+				});
+				
+			});
+			 //心肺复苏活动开始 按
+			hand.addEventListener('touchstart', function() {
+				if($(this).hasClass('ani')){
+					$(this).removeClass('ani');
+				}
+				$(this).css({
+					'-webkit-tranform':'scale(0.8)',
+					'transform':'scale(0.8)'
+				});
+				//获取当前按了多少次
+				var num2 = parseInt($('.num2').html());
+				console.log(num2);
+					$('.num2').html(num2 + 1);
+					$('.huxi').addClass('animated');
+					$('.xt').height(num2 * 7.5 / 110 + 'rem');
+				   
+			});
+			hand.addEventListener('touchend', function() {
+				$('.huxi').removeClass('animated');
+				$(this).css({
+					'-webkit-tranform':'scale(1)',
+					'transform':'scale(1)'
+				});
+//				$('.man').css({
+//					'position':'absolute',
+//	                'top':'9.15rem',
+//	                'left':'50%',
+//	                'margin-left':'-5.5125rem',
+//	                'width':'11.025rem',
+//	                'height':'20rem',
+//	                'background':'url(images/man2.png) no-repeat',
+//	                'background-size':'100% auto'
+//				});
+			});
+			//3秒后调用延时并使手循环动画
+			function threes(){
+				$('.hand').addClass('ani');
+				timer(30,second);
+			}
+			//倒计时
+			function timer(intDiff,id) {
+				var obj=$(id);
+				t = window.setInterval(function() {
+					var second = 0;
+					if (intDiff > 0) {
+						second = Math.floor(intDiff);
+					}
+					if (second <= 9){
+						second = '0' + second;
+					}
+					obj.html(second);
+					intDiff--;
+					if(obj.attr('id')==='second'){
+						if (intDiff == -1) {
+							t = window.clearInterval(t);
+							var num2 = parseInt($('.num2').html());
+							$('.cprnum').find('span').html(num2);
+							$('.counttime').find('span').html(30 - parseInt(obj.html()));
+							$('.result,.bg').show();
+							$('.bg_img').css('display','block');
+							if (num2 >= 55 && num2 <= 65) {
+								$(".p1").css('display','block');
+								$(".p2,.p3,.p4").css('display','none'); 
+							} else if (num2 > 45 && num2 <= 54 || num2 >= 66 && num2 < 75 ) {
+								$(".p2").css('display','block'); 
+								$(".p1,.p3,.p4").css('display','none'); 
+							} else if (num2 > 20 && num2 <= 45 || num2 >= 75 && num2 < 95 ) {
+								$(".p3").css('display','block'); 
+								$(".p1,.p2,.p4").css('display','none'); 
+							} else if (num2 <= 20 || num2 >= 95 ) {
+								$(".p4").css('display','block'); 
+								$(".p1,.p2,.p3").css('display','none'); 
+							}
+						}
+					}else{
+						if(intDiff==-1){
+							$('.bg,#starTime').hide();
+						}
+					}
+				}, 1000);
+				//血条的高度
+				var xtH = $('.xt').height();
+			}
+			//音乐播放
+			window.Player=function(){function _init(src){var _this=this,attr={loop:true,src:src};this.core=new Audio;this.core.preload="auto";for(var i in attr){attr.hasOwnProperty(i)&&i in this.core&&(this.core[i]=attr[i])}this.core.addEventListener("ended",function(){this.currentTime=0;this.play()},false);this.core.load()}function Player(src,cb,autoPlay){this._callback=cb||function(){};this.playing=false;_init.call(this,src);if(autoPlay!==false)this.play()}Player.prototype={play:function(){if(!this.playing){this.core.play();this.playing=true;this._callback()}},pause:function(){if(this.playing){this.core.pause();this.playing=false;this._callback()}},toggle:function(){if(this.playing)this.pause();else this.play()},isPlaying:function(){return this.playing}};return Player}();
+				var btnBgm=document.querySelector('.btnBgm');
+				var playerCb = function()
+				    {
+				        btnBgm.className = this.playing ? "music on" : "music";
+				    };
+				var player = new Player("images/music.mp3", playerCb, false);   //路径, 回调, 自动开始
+				window.onload=player.play();
+				
+				btnBgm.addEventListener('touchend',function(){
+					player.toggle();
+				});
+		</script>
+	</body>
+</html>

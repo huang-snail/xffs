@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="挂号,预约挂号,网上预约,网上挂号,预约医生,专家预约,预约医院,在线医生,咨询问诊,网上医院,移动医疗,预约挂号统一平台" name="Keywords" />
+		<meta content="华康•移动医疗是经省、市卫生厅（局）官方授权的免费预约挂号统一平台,面对全国用户提供三甲医院网上预约挂号和最专业的在线医疗健康咨询服务,旗下移动医疗手机软件,帮助用户患者通过手机进行网上进行预约挂号,无需排队,轻松就诊." name="Description" />
+		<title>医生，快来做心肺复苏</title>
+		<link rel="stylesheet" href="http://apps.bdimg.com/libs/animate.css/3.1.0/animate.min.css">
+		<!-- Link Swiper's CSS -->
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- s -->
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script>
+			function wxInput(obj) {
+				ST = obj.signature;
+			}
+		</script>
+		<!-- wxapiauth.hk515.com -->
+		<script src="http://wxapiauth.hk515.com/api/wechat/Signature?appId=wxb4a25f9e39926b54&noncestr=1428560985000&timestamp=1428560985000&callback=wxInput"></script>
+		<script>
+			var sTitle = '医生，快来做心肺复苏';
+			var sDesc = '我30秒内用心肺复苏拯救了TA，你也来试试吧！';
+			var sLink = 'http://huodong.hk515.com/xffs/index.html';
+			var imgUrl = 'http://huodong.hk515.com/xffs/images/share.png';
+		</script>
+		<script src="js/wx.js" type="text/javascript" charset="utf-8"></script>
+		<!-- s -->
+		<script>
+			  var _hmt = _hmt || [];
+			  (function() {
+			    var hm = document.createElement("script");
+			    hm.src = "//hm.baidu.com/hm.js?93dce326341a9dbc085a70e8a6514e87";
+			    var s = document.getElementsByTagName("script")[0]; 
+			    s.parentNode.insertBefore(hm, s);
+			  })();
+		</script>
+	</head>
+
+	<body class="index_jianjie"> 
+		<div class="swiper-container">
+			<div class="clearfix"></div>
+			<div class="jianjie animated fadeInUpBig">
+				<ul>
+					<li class="jian_img1"><img src="images/avatar1.png" alt="" ></li>
+					<li class="jian_img2"><img src="images/name.png" alt="" ></li>
+					<li class="jian_img3"><img src="images/text.png" alt="" ></li>
+					<li class="text">CPR是心肺复苏术的简称，常用于心搏骤停后现场紧急救治患者。贾大成医生是中国最著名的急救医生之一，被称为中国急救第一人。</li>
+					<li><a href="zhinan.html"></a></li>
+				</ul>
+			</div>
+		</div>
+		<audio src="images/music.mp3" loop />
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+        	window.Player=function(){function _init(src){var _this=this,attr={loop:true,src:src};this.core=new Audio;this.core.preload="auto";for(var i in attr){attr.hasOwnProperty(i)&&i in this.core&&(this.core[i]=attr[i])}this.core.addEventListener("ended",function(){this.currentTime=0;this.play()},false);this.core.load()}function Player(src,cb,autoPlay){this._callback=cb||function(){};this.playing=false;_init.call(this,src);if(autoPlay!==false)this.play()}Player.prototype={play:function(){if(!this.playing){this.core.play();this.playing=true;this._callback()}},pause:function(){if(this.playing){this.core.pause();this.playing=false;this._callback()}},toggle:function(){if(this.playing)this.pause();else this.play()},isPlaying:function(){return this.playing}};return Player}();
+				var btnBgm=document.querySelector('.btnBgm');
+				var playerCb = function()
+				    {
+				        btnBgm.className = this.playing ? "music on" : "music";
+				    };
+				var player = new Player("images/music.mp3", playerCb, false);   //路径, 回调, 自动开始
+				window.onload=player.play();
+				
+				btnBgm.addEventListener('touchend',function(){
+					player.toggle();
+				});
+        </script>
+	</body>
+
+</html>

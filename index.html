@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="挂号,预约挂号,网上预约,网上挂号,预约医生,专家预约,预约医院,在线医生,咨询问诊,网上医院,移动医疗,预约挂号统一平台" name="Keywords" />
+		<meta content="华康•移动医疗是经省、市卫生厅（局）官方授权的免费预约挂号统一平台,面对全国用户提供三甲医院网上预约挂号和最专业的在线医疗健康咨询服务,旗下移动医疗手机软件,帮助用户患者通过手机进行网上进行预约挂号,无需排队,轻松就诊." name="Description" />
+		<title>医生，快来做心肺复苏</title>
+		<link rel="stylesheet" href="http://apps.bdimg.com/libs/animate.css/3.1.0/animate.min.css">
+		<!-- Link Swiper's CSS -->
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- s -->
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script>
+			function wxInput(obj) {
+				ST = obj.signature;
+			}
+		</script>
+		<!-- wxapiauth.hk515.com -->
+		<script src="http://wxapiauth.hk515.com/api/wechat/Signature?appId=wxb4a25f9e39926b54&noncestr=1428560985000&timestamp=1428560985000&callback=wxInput"></script>
+		<script>
+			var sTitle = '医生，快来做心肺复苏';
+			var sDesc = '我30秒内用心肺复苏拯救了TA，你也来试试吧！';
+			var sLink = 'http://huodong.hk515.com/xffs/index.html';
+			var imgUrl = 'http://huodong.hk515.com/xffs/images/share.png';
+		</script>
+		<script src="js/wx.js" type="text/javascript" charset="utf-8"></script>
+		<!-- s -->
+		<script>
+			  var _hmt = _hmt || [];
+			  (function() {
+			    var hm = document.createElement("script");
+			    hm.src = "//hm.baidu.com/hm.js?93dce326341a9dbc085a70e8a6514e87";
+			    var s = document.getElementsByTagName("script")[0]; 
+			    s.parentNode.insertBefore(hm, s);
+			  })();
+		</script>
+	</head>
+
+	<body>
+		<div class="loading">
+			<div class="loader">Loading...</div>
+		</div>
+		<a href="javascript:;" class="btnBgm"></a>
+		<!-- Swiper -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<img src="images/yklogo.png" alt="" class="yklogo" />
+				<div class="swiper-slide page1 swiper-no-swiping">
+					<div class="clearfix"></div>
+					<img src="images/mainlogo.gif" alt="" class="mainlogo" />
+					<a href="youxi.html" class="indexbtn animated pulse infinite">开始救人</a>
+					<div class="rules">
+						<h3>规则</h3>
+						<ul>
+							<li>1、点“开始救人”，马上进入心肺复苏挑战</li>
+							<li>2、游戏时间30秒，时间到则游戏结束</li>
+							<li>3、按压一次患者胸腔，则为完成一次心肺复苏</li>
+							<li style="color:#fff100;">4、按压胸腔不宜过快或过慢，需保持合理节奏</li>
+							<li>5、游戏结束后，可重玩或阅读贾大成正确CRP指南</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="login">
+			<form action="" method="post">
+				<p>
+					<input type="text" id="loginPhoneNumber" placeholder="输入手机号码" required="required" />
+				</p>
+				<p>
+					<input type="password" id="loginPwd" placeholder="输入密码" />
+				</p>
+				<p>
+					<input type="submit" value="登陆" />
+				</p>
+				<a href="javascript:void(0);" class="reglink">注册&gt;&gt;</a>
+			</form>
+		</div>
+		<div class="register">
+			<form action="" method="post">
+				<p>
+					<input type="text" id="regName" placeholder="姓名" required="required" />
+				</p>
+				<p>
+					<input type="text" id="regPhoneNumber" placeholder="输入手机号码" required="required" />
+				</p>
+				<p class="yz">
+					<input type="text" placeholder="手机验证码" /><a href="javascript:void(0);">获取验证码</a>
+				</p>
+				<p>
+					<input type="text" />
+				</p>
+				<p>
+					<input type="submit" value="" placeholder="输入手机号码" />
+				</p>
+			</form>
+		</div>
+		<audio src="images/music.mp3" loop />
+		<!-- Swiper JS -->
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/motion.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<!-- Initialize Swiper -->
+		<script>
+			var countstar,
+				t = null,
+				xt = 110,
+				hand=document.querySelector('.hand'),
+				indexbtn=$('.indexbtn'),
+				bg=$('.bg'),
+				sourceArr = [
+				"http://apps.bdimg.com/libs/animate.css/3.1.0/animate.min.css",
+				"css/swiper.min.css",
+				"css/style.css",
+				"http://res.wx.qq.com/open/js/jweixin-1.0.0.js",
+				"js/wx.js",
+				"images/music.mp3",
+				"http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js",
+				"js/motion.js",
+				"js/swiper.min.js"
+				]; //需要加载的资源列表
+			new mo.Loader(sourceArr, {
+				onComplete: function() {
+					$('.loading').remove();
+				}
+			});
+			$(function() {
+				var swiper = new Swiper('.swiper-container', {
+					noSwiping: true
+				});
+				indexbtn.on('click', function() {
+					//此处判断是否是app，如果是app判断是否登陆，如果已经登陆跳到游戏页面，如果没有，弹出登陆
+					//如果不是app
+					if (1 == 1) {
+						swiper.slideTo(1,timer(3,starTime));
+						$('#starTime').show();
+						bg.show();
+						setTimeout('threes()',3500);
+					} else {
+						$('.bg,.login').show();
+					}
+				});
+				//点击按钮提交注册或者登陆  手机号码验证
+				$('input[type="submit"]').on('click', function(e) {
+					var reg = /^(1[3|5|8])[\d]{9}$/;
+					if (reg.test($('#loginPhoneNumber').val())) {
+						window.location.href = "http://www.baidu.com";
+					} else {
+						alert('请输入正确的手机号码');
+					}
+					e.stopPropagation();
+				});
+				//跳到注册
+				$('.reglink').on('click', function() {
+					$('.register').show();
+					$('.login').hide();
+				});
+				//再来一次  每人仅有1次再来一次机会
+				$('.btn_retry').on('click', function() {
+					t = window.clearInterval(t);
+					$('.bg,.result').hide();
+					$('.num2').html(0);
+					$('.xt').height(0);
+					timer(30,second);
+				});
+				
+			});
+			//音乐播放
+			window.Player=function(){function _init(src){var _this=this,attr={loop:true,src:src};this.core=new Audio;this.core.preload="auto";for(var i in attr){attr.hasOwnProperty(i)&&i in this.core&&(this.core[i]=attr[i])}this.core.addEventListener("ended",function(){this.currentTime=0;this.play()},false);this.core.load()}function Player(src,cb,autoPlay){this._callback=cb||function(){};this.playing=false;_init.call(this,src);if(autoPlay!==false)this.play()}Player.prototype={play:function(){if(!this.playing){this.core.play();this.playing=true;this._callback()}},pause:function(){if(this.playing){this.core.pause();this.playing=false;this._callback()}},toggle:function(){if(this.playing)this.pause();else this.play()},isPlaying:function(){return this.playing}};return Player}();
+				var btnBgm=document.querySelector('.btnBgm');
+				var playerCb = function()
+				    {
+				        btnBgm.className = this.playing ? "music on" : "music";
+				    };
+				var player = new Player("images/music.mp3", playerCb, false);   //路径, 回调, 自动开始
+				window.onload=player.play();
+				
+				btnBgm.addEventListener('touchend',function(){
+					player.toggle();
+				});
+		</script>
+	</body>
+</html>
